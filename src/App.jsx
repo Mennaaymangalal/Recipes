@@ -18,11 +18,13 @@ import Vegan from "./pages/Vegan/Vegan";
 import Vegetarian from "./pages/Vegetarian/Vegetarian";
 import NotFound from "./pages/NotFound/NotFound";
 import Meals from "./pages/Meals/Meals";
+import Area from "./pages/Area/Area";
 
 function App() {
  
  const router = createBrowserRouter([
     {path: '/' , element: <MainLayout/> , children:[
+      {path: 'area' , element:<Area/>},
       {path: '/' , element:<Meals/> , children:[
         {index:true, element:<All/>},
         {path: 'beef' , element:<Beef/>},
