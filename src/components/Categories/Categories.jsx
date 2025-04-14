@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 export default function Categories({product}) {
   return (
     <>
-       <div  className=" group w-fit px-9  py-4 shadow-md bg-white rounded-3xl text-center hover:scale-x-105">
-            <div className="">
+       <div  className="lg:w-fit w-full  h-full group   px-9  py-4 shadow-md bg-white rounded-3xl text-center hover:scale-x-105">
+            <div className="flex align-middle justify-center">
               <img  src={product.strMealThumb} alt="" className='group-hover:rotate-360 transition-all duration-700 rounded-full w-40 h-40 shadow-2xl  -mt-20'/>
             </div>
             <div className="flex flex-col items-center ">
