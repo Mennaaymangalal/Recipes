@@ -1,0 +1,51 @@
+import React from 'react';
+import { useNavigate, NavLink } from 'react-router-dom';
+import { Button } from '@heroui/react';
+
+export default function ButtonLayout() {
+  const navigate = useNavigate();
+
+  const categories = [
+    { label: 'All', value: '' },
+    { label: 'Beef', value: 'beef' },
+    { label: 'Breakfast', value: 'breakfast' },
+    { label: 'Chicken', value: 'chicken' },
+    { label: 'Dessert', value: 'dessert' },
+    { label: 'Goat', value: 'goat' },
+    { label: 'Lamb', value: 'lamb' },
+    { label: 'Miscellaneous', value: 'miscellaneous' },
+    { label: 'Pasta', value: 'pasta' },
+    { label: 'Pork', value: 'pork' },
+    { label: 'Seafood', value: 'seafood' },
+    { label: 'Side', value: 'side' },
+    { label: 'Starter', value: 'starter' },
+    { label: 'Vegan', value: 'vegan' },
+    { label: 'Vegetarian', value: 'vegetarian' },
+  ];
+
+  return (
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold font-pacifico bg-gradient-to-r from-gradientfrom to-greadiaetto bg-clip-text text-transparent mb-6">
+        Learn, Cook, Eat Your Food
+      </h1>
+
+      <div className="hidden md:flex flex-wrap justify-start gap-x-6 gap-y-4 mt-8">
+  {categories.map((category, index) => (
+    <NavLink
+      key={index}
+      to={category.value === '' ? '/' : `/${category.value}`}
+      className={({ isActive }) =>
+        isActive
+          ? 'bg-yellow-100 text-black rounded-full px-6 py-2 font-semibold shadow'
+          : ''
+      }
+    >
+      <Button className="px-6 py-2 border bg-transparent border-gray-400 text-gray-700 rounded-full hover:scale-105 hover:shadow-md hover:text-black font-semibold font-pacifico text-lg text-center">
+        {category.label}
+      </Button>
+    </NavLink>
+  ))}
+</div>
+
+  );
+}
