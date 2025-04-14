@@ -1,5 +1,4 @@
 import React from 'react'
-import ButtonLayout from '../../components/ButtonsLayout/ButtonsLayout'
 import Categorie from '../Categorie/Categorie'
 import Loading from '../../components/Loading/Loading'
 import useFetch from '../../Hooks/UseFetch/UseFetch'

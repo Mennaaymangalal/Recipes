@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import logo from '../../assets/logo-BfNap0Pe.png'
 import Loading from '../../components/Loading/Loading'
 
 export default function MealDetails() {
