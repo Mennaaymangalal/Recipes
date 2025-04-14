@@ -22,15 +22,12 @@ export default function NavbarComponent() {
                  ? "/"
                  : ''
              }
-             className={({ isActive }) =>
+             className={() =>
                `px-4 py-2 rounded-md w-full block text-left text-xl transition-all border border-gray-200 hover:scale-105 ${
-                 index === 1
-                   ? "bg-gray-200 text-black font-semibold shadow"
-                   : index === menuItems.length - 1
-                   ? "bg-gray-200 text-black font-semibold shadow"
-                   : isActive
+                 index === 0                  
                    ? "bg-orangeHighlight text-white font-semibold shadow-lg"
-                   : "text-black"
+                   : "bg-gray-200 text-black font-semibold shadow"                
+
                }`
              }
               >

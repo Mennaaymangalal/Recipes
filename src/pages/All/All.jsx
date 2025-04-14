@@ -1,7 +1,6 @@
 import React from 'react'
 import  { useEffect, useState } from 'react'
 import axios from 'axios'
-import ButtonLayout from '../../components/ButtonsLayout/ButtonsLayout'
 import Categories from '../../components/Categories/Categories'
 import Loading from '../../components/Loading/Loading'
 

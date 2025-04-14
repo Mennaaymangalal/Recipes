@@ -25,7 +25,7 @@ export default function ButtonLayout() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold font-pacifico bg-gradient-to-r from-gradientfrom to-greadiaetto bg-clip-text text-transparent mb-6">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-gradientfrom to-greadiaetto bg-clip-text text-transparent mb-6">
         Learn, Cook, Eat Your Food
       </h1>
 
@@ -55,9 +55,9 @@ export default function ButtonLayout() {
        >
          {({ isActive }) => (
            <Button
-             className={`px-6 py-2 border bg-transparent border-gray-400 rounded-full font-semibold font-pacifico text-lg text-center transition-all ${
+             className={`px-6 py-2 border bg-transparent border-gray-400 rounded-full font-pacifico text-md text-center transition-all ${
                isActive
-                 ? "bg-orangeHighlight text-white shadow-lg"
+                 ? "bg-black text-white shadow-lg"
                  : "text-gray-700 hover:text-black hover:shadow-md hover:scale-105"
              }`}
            >
