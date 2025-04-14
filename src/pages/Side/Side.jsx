@@ -1,13 +1,13 @@
 import React from 'react'
 import Categorie from '../Categorie/Categorie'
 import Loading from '../../components/Loading/Loading'
-import useFetch from '../../Hooks/UseFetch/UseFetch'
+import useGet from '../../hooks/useGet/usegit';
 
 
 
 export default function Side() {
   
-  const {products , isLoading} = useFetch("side")
+  const {products , isLoading} = useGet("side")
 
   return (
     <>

@@ -1,11 +1,11 @@
 import React from 'react'
 import Categorie from '../Categorie/Categorie'
 import Loading from '../../components/Loading/Loading'
-import useFetch from '../../Hooks/UseFetch/UseFetch'
+import useGet from '../../hooks/useGet/usegit';
 
 
 export default function Goat() {
- const {products , isLoading} = useFetch("goat")
+ const {products , isLoading} = useGet("goat")
   return (
     <>
     {

@@ -1,13 +1,13 @@
 import React from 'react'
 import Categorie from '../Categorie/Categorie'
 import Loading from '../../components/Loading/Loading'
-import useFetch from '../../Hooks/UseFetch/UseFetch'
+import useGet from '../../hooks/useGet/usegit';
 
 
 
 export default function Miscellaneous() {
   
-  const {products , isLoading} = useFetch("miscellaneous")
+  const {products , isLoading} = useGet("miscellaneous")
 
   return (
     <>

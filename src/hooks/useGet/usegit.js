@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-export default function useFetch(endpoint){
+export default function useGet(endpoint){
   const [products , setProduct] = useState(null)
   const [isLoading , setIsLoading] = useState(false)
  useEffect(()=>{
