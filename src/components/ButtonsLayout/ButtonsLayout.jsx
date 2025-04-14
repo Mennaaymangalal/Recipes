@@ -58,7 +58,7 @@ export default function ButtonLayout() {
              className={`px-6 py-2 border bg-transparent border-gray-400 rounded-full font-pacifico text-md text-center transition-all ${
                isActive
                  ? "bg-black text-white shadow-lg"
-                 : "text-gray-700 hover:text-black hover:shadow-md hover:scale-105"
+                 : "hover:shadow-md hover:scale-105"
              }`}
            >
              {category.label}
