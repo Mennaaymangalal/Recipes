@@ -16,9 +16,26 @@ export default function NavbarComponent() {
       <div className="flex flex-col gap-6  align-middle pt-10">        
         {menuItems.map((item,index)=>{
           return <div key={index} className="">
-           <NavLink className={ "bg-orangeHighlight text-white font-semibold shadow-lg px-4 py-2 rounded-md w-full block text-left text-xl  hover:scale-105 transition-all border border-gray-200"}>              
+           <NavLink
+           to={
+               item === "Meals"
+                 ? "/"
+                 : ''
+             }
+             className={({ isActive }) =>
+               `px-4 py-2 rounded-md w-full block text-left text-xl transition-all border border-gray-200 hover:scale-105 ${
+                 index === 1
+                   ? "bg-gray-200 text-black font-semibold shadow"
+                   : index === menuItems.length - 1
+                   ? "bg-gray-200 text-black font-semibold shadow"
+                   : isActive
+                   ? "bg-orangeHighlight text-white font-semibold shadow-lg"
+                   : "text-black"
+               }`
+             }
+              >
             {item}
-            </NavLink>          
+            </NavLink>
             
           </div>
         })}

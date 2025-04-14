@@ -15,10 +15,7 @@ export default function Goat() {
        <Loading/>
       :
    <>
-    {/* Button Layout */}
-    <ButtonLayout/>
-
-    {/* Categories Layout */}
+     {/* Categories Layout */}
     <div className="mt-16 grid sm:grid-cols-2 px-4  lg:grid-cols-3 xl:grid-cols-4 gap-8 gap-y-28 justify-center mb-3 ">
       {
         products?.map((product,index)=>{

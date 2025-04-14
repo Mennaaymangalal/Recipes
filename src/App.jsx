@@ -17,30 +17,32 @@ import Starter from "./pages/Starter/Starter";
 import Vegan from "./pages/Vegan/Vegan";
 import Vegetarian from "./pages/Vegetarian/Vegetarian";
 import NotFound from "./pages/NotFound/NotFound";
-
-
-
+import Meals from "./pages/Meals/Meals";
 
 function App() {
  
  const router = createBrowserRouter([
     {path: '/' , element: <MainLayout/> , children:[
-      {index:true , element:<All/>},
-      {path: 'beef' , element:<Beef/>},
-      {path: 'breakfast' , element:<Breakfast/>},
-      {path: 'chicken' , element:<Chicken/>},
-      {path: 'dessert' , element:<Dessert/>},
-      {path: 'goat' , element:<Goat/>},
-      {path: 'lamb' , element:<Lamb/>},
-      {path: 'miscellaneous' , element:<Miscellaneous/>},
-      {path: 'pasta' , element:<Pasta/>},
-      {path: 'pork' , element:<Pork/>},
-      {path: 'seafood' , element:<Seafood/>},
-      {path: 'side' , element:<Side/>},
-      {path: 'starter' , element:<Starter/>},
-      {path: 'vegan' , element:<Vegan/>},
-      {path: 'vegetarian' , element:<Vegetarian/>},      
-      {path: '*' , element:<NotFound/>},
+      {path: '/' , element:<Meals/> , children:[
+        {index:true, element:<All/>},
+        {path: 'beef' , element:<Beef/>},
+        {path: 'breakfast' , element:<Breakfast/>},
+        {path: 'chicken' , element:<Chicken/>},
+        {path: 'dessert' , element:<Dessert/>},
+        {path: 'goat' , element:<Goat/>},
+        {path: 'lamb' , element:<Lamb/>},
+        {path: 'miscellaneous' , element:<Miscellaneous/>},
+        {path: 'pasta' , element:<Pasta/>},
+        {path: 'pork' , element:<Pork/>},
+        {path: 'seafood' , element:<Seafood/>},
+        {path: 'side' , element:<Side/>},
+        {path: 'starter' , element:<Starter/>},
+        {path: 'vegan' , element:<Vegan/>},
+        {path: 'vegetarian' , element:<Vegetarian/>},      
+        {path: '*' , element:<NotFound/>},
+
+      ]},
+    
 
     ]}
   ])
