@@ -1,5 +1,6 @@
 import { Button } from '@heroui/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Categories({product}) {
   return (
@@ -10,9 +11,9 @@ export default function Categories({product}) {
             </div>
             <div className="flex flex-col items-center ">
               <h3 className=' pt-6 font-bold text-2xl font-pacifico'>{product.strCategory}</h3>
-              <h5 className=' pb-4 font-semibold text-xl font-pacifico text-green-500 line-clamp-1'>Japanise</h5>
-              <Button className='px-5 py-8 font-pacifico mb-6 bg-green-500 text-white text-lg font-bold rounded-full '>
-                <a href="" >View Recipe</a>
+              <h5 className=' pb-4 font-semibold text-xl font-pacifico text-green-500 line-clamp-1'>{product.strArea}</h5>
+              <Button  className='px-5 py-8 font-pacifico mb-6 bg-green-500 text-white text-lg font-bold rounded-full '>
+                <Link to={"/mealdetails/" + product.idMeal} >View Recipe</Link>
               </Button>
             </div>
           </div>      

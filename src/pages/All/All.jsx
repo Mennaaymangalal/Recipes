@@ -20,6 +20,7 @@ export default function All() {
  
      const results = await Promise.all(mealPromises);
      const meals = results.map(res => res.data.meals[0]);
+     console.log(meals)
      setProduct(meals);
      setIsLoading(false)
    } catch (err) {
