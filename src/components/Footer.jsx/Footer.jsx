@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="bprder border-b-2 p-4"> </div>
 
       <div className="text-center pt-5 ">
-       <span className=' text-footerclr text-sm '>© 2025 Nagy Osama™. All Rights Reserved.</span>
+       <span className=' text-footerclr text-sm '>© 2025 Menna Ayman™. All Rights Reserved.</span>
       </div>
       </div>      
     </>
