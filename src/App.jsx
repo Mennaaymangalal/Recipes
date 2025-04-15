@@ -28,7 +28,7 @@ function App() {
       {path: 'area' , element:<Area/>},
       {path: '*' , element:<NotFound/>},
       {path: 'mealdetails/:id' , element:<MealDetails/>},   
-      {path: '/' , element:<Meals/> , children:[
+      {path: '' , element:<Meals/> , children:[
         {index:true, element:<All/>},
         {path: 'beef' , element:<Beef/>},
         {path: 'breakfast' , element:<Breakfast/>},
